@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keoplanner - La Agenda Online Exclusiva para tu Barbería</title>
+    <meta name="description"
+        content="Simplifica la gestión de tu barbería en Chile con Keoplanner. Agenda online, recordatorios y control total desde web y móvil. Prueba gratis.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1E1E1E',    // Fondo oscuro del Hero
+                            beige: '#E8E0D5',   // Fondo claro del cuerpo
+                            orange: '#FF7F00',  // Naranja de acento y botones
+                            cardDark: '#2B2B2B' // Fondo de las tarjetas de testimonio
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(255, 127, 0, 0.3)', // Sombra suave naranja
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* CSS Puro para ajustes específicos */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Clase de utilidad para asegurar que los inputs del formulario se vean bien */
+        .form-input {
+            @apply mt-1 block w-full rounded-md border-gray-300 bg-gray-50 py-3 px-4 text-gray-700 shadow-sm focus:border-brand-orange focus:ring-brand-orange sm:text-sm;
+            border: 1px solid #d1d5db;
+            /* Fallback border */
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <section class="bg-brand-dark min-h-[90vh] relative overflow-hidden flex items-center pt-20 pb-12 lg:pt-0 lg:pb-0">
+
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-brand-dark via-brand-dark to-transparent opacity-50 z-0">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24">
+
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                        La Agenda Online<br>
+                        <span class="text-brand-orange relative">
+                            Exclusiva
+                            <span
+                                class="absolute -bottom-2 left-0 w-full h-1 bg-brand-orange opacity-50 blur-sm"></span>
+                        </span> para tu<br>
+                        Barbería
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                        Simplifica tu gestión. Maximiza tus ganancias. Dale a tu clientela la experiencia de reserva que
+                        merecen, desde web y móvil.
+                    </p>
+
+                    <div>
+                        <a href="#formulario-acceso"
+                            class="inline-block bg-brand-orange text-white font-bold text-lg px-10 py-4 rounded-full shadow-glow hover:bg-orange-600 transition transform hover:-translate-y-1">
+                            Regístrate Gratis
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-md lg:max-w-lg">
+                        <img src="https://placehold.co/600x700/1e1e1e/FFFFFF/png?text=Barbero+con+App+Keoplanner+(Imagen+Estilo+Referencia)"
+                            alt="Barbero usando Keoplanner App"
+                            class="w-full h-auto object-cover rounded-2xl relative z-10">
+
+                        <div
+                            class="absolute top-10 -right-10 w-32 h-32 bg-brand-orange blur-[60px] opacity-30 z-0 rounded-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="bg-brand-beige relative z-10">
+
+        <section class="py-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-16">
+                    4 Funcionalidades Clave para tu Éxito
+                </h2>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
+                        <div class="text-brand-orange text-4xl mb-4">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Reservas 24/7</h3>
+                        <p class="text-gray-600 text-sm">Tus clientes agendan solos, incluso mientras duermes.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
+                        <div class="text-brand-orange text-4xl mb-4">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Gestión de Personal</h3>
+                        <p class="text-gray-600 text-sm">Controla horarios y comisiones de tu equipo.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
+                        <div class="text-brand-orange text-4xl mb-4">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Recordatorios Auto.</h3>
+                        <p class="text-gray-600 text-sm">Reduce inasistencias con alertas automáticas.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
+                        <div class="text-brand-orange text-4xl mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Análisis y Reportes</h3>
+                        <p class="text-gray-600 text-sm">Conoce tus ganancias y métricas clave.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-16">
+                    Lo que Dicen Nuestros Clientes
+                </h2>
+
+                <div class="flex flex-col lg:flex-row gap-8 justify-center">
+
+                    <div class="bg-brand-cardDark rounded-3xl p-8 flex-1 shadow-lg relative">
+                        <div class="text-brand-orange text-5xl absolute top-4 left-6 opacity-40">“</div>
+                        <p class="text-gray-300 relative z-10 mb-8 pt-4 leading-relaxed">
+                            "Increíble herramienta. Desde que usamos Keoplanner en la barbería, el teléfono dejó de
+                            sonar y la agenda se llena sola. ¡Recuperé mi tiempo libre!"
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/60?img=33" alt="Avatar"
+                                class="w-12 h-12 rounded-full mr-4 border-2 border-brand-orange">
+                            <div>
+                                <h4 class="text-white font-bold">Carlos R.</h4>
+                                <p class="text-gray-400 text-sm">Dueño de "Barber Kings"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-cardDark rounded-3xl p-8 flex-1 shadow-lg relative">
+                        <div class="text-brand-orange text-5xl absolute top-4 left-6 opacity-40">“</div>
+                        <p class="text-gray-300 relative z-10 mb-8 pt-4 leading-relaxed">
+                            "La gestión de mi equipo ahora es súper fácil. Cada barbero ve su agenda y yo controlo las
+                            comisiones sin peleas ni cuadernos perdidos."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/60?img=68" alt="Avatar"
+                                class="w-12 h-12 rounded-full mr-4 border-2 border-brand-orange">
+                            <div>
+                                <h4 class="text-white font-bold">Andrés M.</h4>
+                                <p class="text-gray-400 text-sm">Fundador "Estilo Urbano"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-cardDark rounded-3xl p-8 flex-1 shadow-lg relative">
+                        <div class="text-brand-orange text-5xl absolute top-4 left-6 opacity-40">“</div>
+                        <p class="text-gray-300 relative z-10 mb-8 pt-4 leading-relaxed">
+                            "Mis clientes aman poder reservar a las 11 de la noche por Instagram. Keoplanner le dio un
+                            toque profesional tremendo a mi negocio."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/60?img=45" alt="Avatar"
+                                class="w-12 h-12 rounded-full mr-4 border-2 border-brand-orange">
+                            <div>
+                                <h4 class="text-white font-bold">Felipe S.</h4>
+                                <p class="text-gray-400 text-sm">Barbero Independiente</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="formulario-acceso" class="py-24 px-6">
+            <div class="max-w-3xl mx-auto text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">
+                    Da el Salto a la Digitalización
+                </h2>
+                <p class="text-gray-600 mt-4">Completa tus datos y prueba Keoplanner gratis por 15 días.</p>
+            </div>
+
+            <div class="bg-white rounded-[40px] shadow-2xl p-8 lg:p-12 max-w-xl mx-auto relative">
+                <div class="absolute bottom-0 right-0 opacity-10">
+                    <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0L93.3013 25V75L50 100L6.69873 75V25L50 0Z" fill="#FF7F00" />
+                    </svg>
+                </div>
+
+                <form action="#" method="POST" class="space-y-5 relative z-10">
+                    <div>
+                        <label for="name" class="sr-only">Nombre y Apellido</label>
+                        <input type="text" name="name" id="name" class="form-input bg-gray-100 border-none"
+                            placeholder="Nombre y Apellido" required>
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" class="form-input bg-gray-100 border-none"
+                            placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="sr-only">Teléfono</label>
+                        <input type="tel" name="phone" id="phone" class="form-input bg-gray-100 border-none"
+                            placeholder="Teléfono (Ej: +569...)" required>
+                    </div>
+                    <div>
+                        <label for="barbers-count" class="sr-only">Cantidad de Barberos</label>
+                        <select name="barbers-count" id="barbers-count"
+                            class="form-input bg-gray-100 border-none text-gray-500">
+                            <option value="" disabled selected>Cantidad de Barberos</option>
+                            <option value="1">Solo yo (1)</option>
+                            <option value="2-5">Entre 2 y 5</option>
+                            <option value="6+">Más de 6</option>
+                        </select>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full flex justify-center py-4 px-4 border border-transparent rounded-full shadow-sm text-lg font-bold text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition">
+                            Solicitar Acceso Gratis
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-black text-gray-400 py-6 text-center text-sm">
+            <p>© 2024 Keoplanner. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+    <script>
+        // Si necesitaras JS específico, iría aquí. 
+        // Para este diseño, HTML y Tailwind CSS son suficientes.
+        // El scroll suave está activado en la etiqueta <html>
+    </script>
+
+</body>
+
+</html>
