@@ -132,48 +132,34 @@
     </header> -->
 
     <!-- 2. SECCIÓN HERO (Banner Principal) -->
-    <section class="relative lg:py-32 border-b-4 border-gray-800 overflow-hidden">
+    <section class="relative py-16 md:py-24 lg:py-32 border-b-4 border-gray-800 overflow-hidden">
         <!-- Imagen de fondo absoluta para cubrir toda la sección -->
-        <div class="hidden lg:block absolute inset-0 z-[-1]">
-            <img src="barber-phone-ui-v3.png" alt="wallpaper-banner-barber"
+        <div class="absolute inset-0 z-[-1] opacity-100">
+            <img src="barber-phone-ui.png" alt="wallpaper-banner-barber"
                 class="w-full h-full object-cover object-top lg:object-center">
             <!-- Overlay oscuro para mejorar legibilidad -->
-            <div class="absolute inset-0"
-                style="background: linear-gradient(90deg, #111111 0%, #111111 20%, rgba(17,17,17,0.8) 30%, rgba(17,17,17,0) 100%);">
-            </div>
+            <div class="absolute inset-0 bg-black/60"></div>
         </div>
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-6 lg:gap-12 items-center relative z-10">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
             <!-- Lado Izquierdo: Título y Subtítulo -->
-            <div class="text-center lg:text-left relative py-10 lg:py-0 w-full">
-                <!-- Mobile Background (Only visible on mobile) -->
-                <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen z-[-1] lg:hidden">
-                    <img src="barber-phone-ui-v3.png" alt="wallpaper-banner-barber"
-                        class="w-full h-full object-cover object-top">
-                    <!-- Overlay oscuro para mejorar legibilidad -->
-                    <div class="absolute inset-0"
-                        style="background: linear-gradient(90deg, #111111 0%, #111111 20%, rgba(17,17,17,0.8) 30%, rgba(17,17,17,0) 100%);">
-                    </div>
-                </div>
+            <div class="text-center lg:text-left">
                 <img src="logo-keo-planner-blanco.png" alt="logo-keo-planner-blanco"
-                    class="w-44 mb-6 lg:w-80 lg:mb-20 mx-auto lg:mx-0">
+                    class="w-64 mb-10 lg:w-80 lg:mb-20 mx-auto lg:mx-0">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight text-white">
-                    LA APP DE AGENDAMIENTO QUE MERECE TU BARBERÍA
-                    <!-- <span class="highlight">Negocio</span> -->
+                    La forma más fácil de organizar tu <span class="highlight">Negocio</span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl text-beige/70 mb-6 text-white font-medium">
-                    Con Keo Planner dile adiós al desorden, las inasistencias de clientes y la falta de tiempo.
+                <h2 class="text-2xl md:text-3xl text-beige/70 mb-8 text-white font-medium">
+                    Automatiza tu agenda y los recordatorios de tus clientes por WhatsApp.
                 </h2>
                 <!-- Eliminado botón CTA duplicado, el foco ahora es el formulario -->
-                <div class="block text-white font-bold text-2xl">
-                    Organiza, Automatiza y Profesionalizate.
-                    <!-- <span class="animate-hand-point">👉</span> -->
+                <div class="hidden lg:block text-orange-500 font-bold text-2xl animate-pulse">
+                    Regístrate gratis hoy mismo <span class="animate-hand-point">👉</span>
                 </div>
             </div>
 
             <!-- Lado Derecho: Formulario de Registro (Diseño Nuevo) -->
-            <div
-                class=" relative bg-white rounded-3xl p-6 md:p-8 shadow-2xl max-w-md mx-auto lg:mr-0 w-full font-sans mb-12 lg:mb-0">
+            <div class=" relative bg-white rounded-3xl p-6 md:p-8 shadow-2xl max-w-md mx-auto lg:mr-0 w-full font-sans">
                 <!-- Badge "¡Agenda Online!" -->
                 <div
                     class="absolute -top-4 -right-4 bg-[#FFEB3B] text-black font-bold px-4 py-2 rounded-lg transform rotate-6 shadow-md z-20 text-sm">
@@ -210,7 +196,8 @@
                                 <select
                                     class="appearance-none bg-gray-100 border border-gray-300 text-gray-700 py-3 pl-3 pr-8 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent font-medium text-base h-full cursor-pointer">
                                     <option>CL +56</option>
-                                    <option>VZ +58</option>
+                                    <option>MX +52</option>
+                                    <option>CO +57</option>
                                 </select>
                                 <div
                                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -251,24 +238,9 @@
 
                     <!-- Submit Button -->
                     <button type="submit"
-                        class="w-full bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
-                        Regístrate ahora!
+                        class="w-full bg-[#FF7F00] hover:bg-[#e67300] text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4">
+                        Regístrate gratis ahora!
                     </button>
-                    <style>
-                        @keyframes float {
-                            0% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(-8px);
-                            }
-
-                            100% {
-                                transform: translateY(0);
-                            }
-                        }
-                    </style>
 
                     <p class="text-xs text-center text-gray-400 mt-2">
                         Al crear tu cuenta aceptas nuestros <a href="#" class="underline hover:text-gray-600">términos y
