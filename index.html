@@ -526,7 +526,7 @@
         </div>
         <div class="flex justify-center mt-4">
             <button type="submit"
-                class="w-[380px] bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
+                class="w-[350px] md:w-[380px] font-sans mb-12 lg:mb-0 bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
                 Regístrate ahora!
             </button>
         </div>
@@ -558,17 +558,16 @@
                 </h2>
                 <div class="flex justify-center mt4">
                     <button type="submit"
-                        class="w-full bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
+                        class="w-[350px] md:w-[380px] bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
                         Regístrate ahora!
                     </button>
                 </div>
             </div>
+            <!-- Botón solo visible en mobile, debajo del video -->
         </div>
-
-        <!-- Botón solo visible en mobile, debajo del video -->
-        <div class="flex md:hidden justify-center py-6">
+        <div class="flex flex-col h-full md:hidden items-center justify-end">
             <button type="submit"
-                class="w-[280px] bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl animate-[float_3s_ease-in-out_infinite]">
+                class="w-[350px] md:w-[380px] bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl animate-[float_3s_ease-in-out_infinite]">
                 Regístrate ahora!
             </button>
         </div>
@@ -658,7 +657,7 @@
         </div>
         <div class="flex justify-center mt-4">
             <button type="submit"
-                class="w-[380px] bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
+                class="w-[350px] md:w-[380px] bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
                 Regístrate ahora!
             </button>
         </div>
@@ -670,8 +669,10 @@
             <div class="bg-black rounded-3xl p-6 md:p-16 relative overflow-visible">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="text-white z-10">
-                        <h2 class="text-3xl md:text-5xl font-bold mb-6">Lleva tu negocio en el <span
-                                class="text-orange-500">Bolsillo</span></h2>
+                        <h2 class="text-2xl md:text-4xl font-bold mb-6">DEJA QUE KEO PLANNER ORGANICE TODO MIENTRAS TU
+                            TE ENFOCAS EN TUS CLIENTES</h2>
+                        <img src="/foto-keoplanner-javier.jpeg" alt="Keo Planner App"
+                            class="rounded-2xl mb-6 h-[300px]">
                         <p class="text-lg text-gray-400 mb-8">Administra tu barbería desde cualquier lugar. Revisa tu
                             agenda, aprueba citas y consulta tus ganancias desde nuestra App para profesionales.</p>
                         <div class="flex flex-col sm:flex-row gap-4">
@@ -695,11 +696,96 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Phone Mockup Placeholder -->
-                    <div class="relative h-64 md:h-auto z-10 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1512428559087-560fa0db7f59?q=80&w=2070&auto=format&fit=crop"
-                            class="rounded-3xl shadow-2xl border-4 border-gray-800 w-64 md:w-80 transform md:translate-y-10"
-                            alt="App Preview">
+                    <!-- Formulario de Registro -->
+                    <div
+                        class="relative bg-white rounded-3xl p-6 md:p-8 shadow-2xl max-w-md mx-auto w-full font-sans z-10">
+                        <!-- Badge "¡Agenda Online!" -->
+                        <div
+                            class="absolute -top-4 -right-4 bg-[#FFEB3B] text-black font-bold px-4 py-2 rounded-lg transform rotate-6 shadow-md z-20 text-sm">
+                            ¡Regístrate Ahora!
+                        </div>
+
+                        <div class="text-center mb-6">
+                            <h3 class="text-[#1A1A2E] text-2xl font-black mb-1">¡Inicia gratis!</h3>
+                            <p class="text-gray-500 text-xs">SOMOS LA UNICA AGENDA CON RECORDATORIOS POR WHATSAPP GRATIS
+                                ILIMITADOS.</p>
+                        </div>
+
+                        <form action="#" class="space-y-4 text-left">
+
+                            <!-- Input Nombre y Apellido -->
+                            <div>
+                                <label class="block text-gray-700 font-bold text-sm mb-1 ml-1">Nombre y Apellido</label>
+                                <input type="text" placeholder="Ej: Juan Pérez"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white">
+                            </div>
+
+                            <!-- Input Email -->
+                            <div>
+                                <label class="block text-gray-700 font-bold text-sm mb-1 ml-1">Email</label>
+                                <input type="email" placeholder="tucorreo@ejemplo.com"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white">
+                            </div>
+
+                            <!-- Input Teléfono -->
+                            <div>
+                                <label class="block text-gray-700 font-bold text-sm mb-1 ml-1">Teléfono</label>
+                                <div class="flex">
+                                    <div class="relative">
+                                        <select
+                                            class="appearance-none bg-gray-100 border border-gray-300 text-gray-700 py-3 pl-3 pr-8 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent font-medium text-base h-full cursor-pointer">
+                                            <option>CL +56</option>
+                                            <option>VZ +58</option>
+                                        </select>
+                                        <div
+                                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <input type="tel" placeholder="9 1234 5678"
+                                        class="w-full px-4 py-3 border border-l-0 border-gray-300 rounded-r-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white">
+                                </div>
+                            </div>
+
+                            <!-- Select Profesionales -->
+                            <div>
+                                <label class="block text-gray-700 font-bold text-sm mb-1 ml-1">¿Cuántos profesionales
+                                    atienden?</label>
+                                <div class="relative">
+                                    <select
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-500 bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent appearance-none cursor-pointer">
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="1">1 Profesional</option>
+                                        <option value="2-5">2 - 5 Profesionales</option>
+                                        <option value="6-10">6 - 10 Profesionales</option>
+                                        <option value="+10">Más de 10 Profesionales</option>
+                                    </select>
+                                    <div
+                                        class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit"
+                                class="w-full bg-[#FF7F00] hover:bg-green-600 text-white font-bold py-3 rounded-lg text-lg shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl mt-4 animate-[float_3s_ease-in-out_infinite]">
+                                Regístrate ahora!
+                            </button>
+
+                            <p class="text-xs text-center text-gray-400 mt-2">
+                                Al crear tu cuenta aceptas nuestros <a href="#"
+                                    class="underline hover:text-gray-600">términos y
+                                    condiciones.</a>.
+                            </p>
+                        </form>
                     </div>
                     <!-- Glow effect behind -->
                     <div

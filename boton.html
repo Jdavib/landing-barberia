@@ -1,0 +1,26 @@
+/* Solo necesitas cambiar la clase del botón y agregar estos estilos */
+
+.btn-appstore-brand {
+/* Usa la misma estructura base que .btn-appstore-classic */
+display: inline-flex;
+align-items: center;
+padding: 8px 22px;
+border-radius: 30px;
+text-decoration: none;
+font-family: -apple-system, sans-serif;
+color: #ffffff;
+
+/* CAMBIOS DE MARCA */
+background-color: #007AFF; /* Color de ejemplo (Azul iOS) */
+/* Sombra brillante del mismo color */
+box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-appstore-brand:hover {
+transform: translateY(-3px);
+/* Sombra más intensa al hover */
+box-shadow: 0 6px 20px rgba(0, 122, 255, 0.6);
+}
+
+/* (Asegúrate de incluir también los estilos internos de .apple-icon y .btn-text-container de la Opción 1) */
